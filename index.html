@@ -18,6 +18,101 @@
   </head>
 
   <body>
+    <!-- Mobile menu -->
+    <div class="mobile">
+      <div class="mobile-wrapper">
+        <button type="button" class="mobile-close">
+          <svg class="mobile-icon" width="8" height="8">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-list">
+          <li class="mobile-list-item">
+            <a href="./index.html" class="mobile-list-item-link" target="_blank"
+              >Studio</a
+            >
+          </li>
+          <li class="mobile-list-item">
+            <a href="./index.html" class="mobile-list-item-link" target="_blank"
+              >Portfolio</a
+            >
+          </li>
+          <li class="mobile-list-item">
+            <a href="./index.html" class="mobile-list-item-link" target="_blank"
+              >Contacts</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-contacts-list">
+          <li class="mobile-contacts-list-item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="mobile-contacts-link"
+              target="_blank"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="mobile-contacts-list-item">
+            <a
+              href="tel:+110001111111"
+              class="mobile-contacts-link"
+              target="_blank"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+
+        <div class="mobile-social">
+          <ul class="social-list">
+            <li class="social-list-item">
+              <a
+                href="https://www.instagram.com/"
+                class="social-list-item-link"
+                target="_blank"
+              >
+                <svg class="social-list-item-icon" width="24" height="24">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a
+                href="https://www.twitter.com/"
+                class="social-list-item-link"
+                target="_blank"
+              >
+                <svg class="social-list-item-icon" width="24" height="24">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a
+                href="https://www.facebook.com/"
+                class="social-list-item-link"
+                target="_blank"
+              >
+                <svg class="social-list-item-icon" width="24" height="24">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a
+                href="https://www.linkedin.com/"
+                class="social-list-item-link"
+                target="_blank"
+              >
+                <svg class="social-list-item-icon" width="24" height="24">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <!-- Header -->
     <header class="header">
       <div class="container">
@@ -85,10 +180,12 @@
 
           <ul class="about-list">
             <li class="about-list-item">
-              <div class="about-list-item-box">
-                <svg class="about-list-item-box-icon" width="64" height="64">
-                  <use href="./images/icons.svg#antenna"></use>
-                </svg>
+              <div class="about-list-item-box-wrap">
+                <div class="about-list-item-box">
+                  <svg class="about-list-item-box-icon" width="64" height="64">
+                    <use href="./images/icons.svg#antenna"></use>
+                  </svg>
+                </div>
               </div>
               <h3 class="about-list-item-title">Strategy</h3>
               <p class="about-list-item-text">
@@ -98,10 +195,12 @@
             </li>
 
             <li class="about-list-item">
-              <div class="about-list-item-box">
-                <svg class="about-list-item-box-icon" width="64" height="64">
-                  <use href="./images/icons.svg#clock"></use>
-                </svg>
+              <div class="about-list-item-box-wrap">
+                <div class="about-list-item-box">
+                  <svg class="about-list-item-box-icon" width="64" height="64">
+                    <use href="./images/icons.svg#clock"></use>
+                  </svg>
+                </div>
               </div>
               <h3 class="about-list-item-title">Punctuality</h3>
               <p class="about-list-item-text">
@@ -111,10 +210,12 @@
             </li>
 
             <li class="about-list-item">
-              <div class="about-list-item-box">
-                <svg class="about-list-item-box-icon" width="64" height="64">
-                  <use href="./images/icons.svg#diagram"></use>
-                </svg>
+              <div class="about-list-item-box-wrap">
+                <div class="about-list-item-box">
+                  <svg class="about-list-item-box-icon" width="64" height="64">
+                    <use href="./images/icons.svg#diagram"></use>
+                  </svg>
+                </div>
               </div>
               <h3 class="about-list-item-title">Diligence</h3>
               <p class="about-list-item-text">
@@ -124,10 +225,12 @@
             </li>
 
             <li class="about-list-item">
-              <div class="about-list-item-box">
-                <svg class="about-list-item-box-icon" width="64" height="64">
-                  <use href="./images/icons.svg#astronaut"></use>
-                </svg>
+              <div class="about-list-item-box-wrap">
+                <div class="about-list-item-box">
+                  <svg class="about-list-item-box-icon" width="64" height="64">
+                    <use href="./images/icons.svg#astronaut"></use>
+                  </svg>
+                </div>
               </div>
               <h3 class="about-list-item-title">Technologies</h3>
               <p class="about-list-item-text">
@@ -608,7 +711,7 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close">
           <svg class="modal-icon" width="8" height="8">
